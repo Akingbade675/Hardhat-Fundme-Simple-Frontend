@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fund Me</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="nav">
+        <p>F <span>und Me</span></p>
+        <div>
+          <button id="withdrawBtn" onclick="">Withdraw</button>
+          <button id="conn" onclick="connect()">Connect</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="box">
+        <div id="statusBox">
+          <p id="statusTxt">No wallet is connected</p>
+          <div id="status"></div>
+        </div>
+        <div id="balanceBox">
+          <p id="balanceTxt">Balance</p>
+          <div>
+            <p id="bal">0</p>
+            <p><span>eth</span></p>
+          </div>
+        </div>
+        <!-- form -->
+        <label for="fund">ETH Amount</label>
+        <input id="ethAmount" placeholder="0.1" />
+        <button id="fundBtn" onclick="fund()">Fund</button>
+        <!-- form -->
+      </div>
+    </main>
+
+    <script src="index.js" , type="module"></script>
+    <script
+      src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+      charset="utf-8"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
